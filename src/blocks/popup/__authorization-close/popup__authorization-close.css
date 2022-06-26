@@ -14,9 +14,7 @@
 
 @media screen and (max-width:550px) {
   .popup__authorization-close{
-    right: 0;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 16px;
+    left: 3px;
+    top: -23px;
   }
 }

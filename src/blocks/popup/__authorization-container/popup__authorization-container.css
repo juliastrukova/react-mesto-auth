@@ -6,3 +6,10 @@
   border-radius: 10px;
   display: flex;
 }
+
+@media screen and (max-width:550px) {
+  .popup__authorization-container{
+    width: 280px;
+    height: 308px;
+  }
+}
