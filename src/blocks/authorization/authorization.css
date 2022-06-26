@@ -1,0 +1,14 @@
+.authorization{
+  align-items: center;
+  position: relative;
+  max-width: 880px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:550px){
+  .authorization{
+   width: 100%;
+   margin: 0 auto;
+  }
+}

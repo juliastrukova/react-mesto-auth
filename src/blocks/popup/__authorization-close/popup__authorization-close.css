@@ -1,0 +1,22 @@
+.popup__authorization-close{
+  background-image: url(../../../images/popup/__close.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  transition: opacity .3s;
+  left: 36px;
+  top: -39px;
+  position: relative;
+}
+
+@media screen and (max-width:550px) {
+  .popup__authorization-close{
+    right: 0;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 16px;
+  }
+}

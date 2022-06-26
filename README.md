@@ -27,4 +27,4 @@
 **Автор:** Юлия Струкова
 
 
-**Ссылка на сайт:** https://juliastrukova.github.io/mesto-react/
+**Ссылка на сайт:** https://juliastrukova.github.io/react-mesto-auth/
