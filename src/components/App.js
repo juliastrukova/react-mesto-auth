@@ -152,7 +152,6 @@ function App() {
       });
   }
 
-  //Вход пользователя
   function handleLogin(loginData) {
     auth
       .authorization(loginData)
