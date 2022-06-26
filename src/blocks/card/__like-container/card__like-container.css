@@ -1,0 +1,5 @@
+.card__like-container{
+  grid-column: 1;
+  grid-row: 2;
+  margin: 22px 20px 22px auto;
+}

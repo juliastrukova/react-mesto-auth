@@ -1,0 +1,25 @@
+.photo-grid{
+  display: grid;
+  color: black;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 47px;
+  grid-column-gap: 17px;
+  grid-row-gap: 20px;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fill,minmax(282px,1fr));
+}
+
+@media screen and (max-width:950px) { 
+  .photo-grid{
+    max-width: 90%;
+    padding-top: 36px;
+    margin: 0 auto;
+  }
+} 
+
+@media screen and (max-width:450px) { 
+  .photo-grid{
+    max-width: 88%;
+  }
+} 

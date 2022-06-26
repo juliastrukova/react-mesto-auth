@@ -1,0 +1,16 @@
+.card__like {
+  border: none;
+  outline: none;
+  display: block;
+  background: url(../../../images/photo-grid/like.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 19px;
+  opacity: 1;
+  transition-duration: 2s;
+  }
+
+.card__like:hover{
+  opacity: 0.5;
+  transition-duration: 2s;
+}
