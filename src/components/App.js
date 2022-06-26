@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Switch, Route, Redirect, useHistory } from "react-router-dom";
 import Header from "./Header.js";
 import Main from "./Main.js";
@@ -37,9 +37,10 @@ function App() {
     if (token) {
       auth
         .checkToken(token)
-        .then((res) => {
-          if (res.data) {
-            setUserEmail(res.data.email);
+        .then(({ data }) => {
+          if (data) {
+            const { email } = data;
+            setUserEmail(email);
             setLoggedIn(true);
             history.push("/");
           }
@@ -152,15 +153,14 @@ function App() {
       });
   }
 
-  function handleLogin(loginData) {
+  function handleLogin({ password, email }) {
     auth
-      .authorization(loginData)
-      .then((res) => {
-        if (res.token) {
-          setLoggedIn(true);
-          localStorage.setItem("jwt", res.token);
-          history.push("/");
-        }
+      .authorization({ password, email })
+      .then(({ token }) => {
+        setLoggedIn(true);
+        setUserEmail(email);
+        localStorage.setItem("jwt", token);
+        history.push("/");
       })
       .catch((err) => {
         setInfoTooltipImage(imageError);
@@ -197,7 +197,6 @@ function App() {
             cards={cards}
             loggedIn={loggedIn}
           />
-
           <Route exact path="/sign-up">
             <Register onRegister={handleRegister} />
           </Route>
