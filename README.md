@@ -20,7 +20,7 @@
 
 **Планы по доработке проекта:**
 
-* сделать код кросс-браузерным
+* добавить светлую тему
 * добавить английский язык
 
 
@@ -28,3 +28,11 @@
 
 
 **Ссылка на сайт:** https://juliastrukova.github.io/react-mesto-auth/
+
+
+
+**Инструкция по развёртыванию**
+
+* git clone https://github.com/juliastrukova/react-mesto-auth/
+* npm i
+* npm start
